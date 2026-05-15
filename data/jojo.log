@@ -1,0 +1,153 @@
+2026-05-13 18:51:08.076 | INFO     | src.jojo.cli:main:81 - JoJo Agent v0.1.0 initializing...
+2026-05-13 18:51:08.076 | INFO     | src.jojo.cli:main:90 - No command specified, showing status
+2026-05-13 18:51:10.699 | INFO     | src.jojo.cli:main:81 - JoJo Agent v0.1.0 initializing...
+2026-05-13 18:51:12.577 | INFO     | src.jojo.cli:main:81 - JoJo Agent v0.1.0 initializing...
+2026-05-13 18:54:32.745 | INFO     | src.jojo.cli:main:81 - JoJo Agent v0.1.0 initializing...
+2026-05-13 18:54:32.745 | INFO     | src.jojo.cli:main:90 - No command specified, showing status
+2026-05-13 18:54:57.526 | INFO     | src.jojo.cli:main:81 - JoJo Agent v0.1.0 initializing...
+2026-05-13 18:54:57.526 | INFO     | src.jojo.cli:main:90 - No command specified, showing status
+2026-05-13 19:54:57.673 | INFO     | src.jojo.cli:main:162 - JoJo Agent v0.1.0 initializing...
+2026-05-15 10:19:41.452 | INFO     | src.jojo.cli:main:240 - JoJo Agent v0.1.0 initializing...
+2026-05-15 10:23:47.956 | INFO     | src.jojo.cli:main:240 - JoJo Agent v0.1.0 initializing...
+2026-05-15 10:25:26.349 | INFO     | src.jojo.cli:main:240 - JoJo Agent v0.1.0 initializing...
+2026-05-15 10:27:01.679 | INFO     | src.jojo.cli:main:240 - JoJo Agent v0.1.0 initializing...
+2026-05-15 10:35:03.753 | INFO     | src.jojo.cli:main:244 - JoJo Agent v0.1.0 initializing...
+2026-05-15 10:35:06.662 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '你好...' → researcher
+2026-05-15 10:35:25.811 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '搜索 Python 相关知识...' → researcher
+2026-05-15 10:35:26.527 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 10:35:27.654 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '搜索 Python 相关知识...' → researcher
+2026-05-15 10:35:32.991 | ERROR    | src.jojo.cli:_chat_loop:122 - Error: litellm.BadRequestError: DeepseekException - {"error":{"message":"The `reasoning_content` in the thinking mode must be passed back to the API.","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2026-05-15 10:40:02.392 | INFO     | src.jojo.cli:main:244 - JoJo Agent v0.1.0 initializing...
+2026-05-15 10:40:12.337 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '搜索agent相关知识...' → researcher
+2026-05-15 10:40:13.365 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 10:40:14.182 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '搜索agent相关知识...' → researcher
+2026-05-15 10:40:21.044 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\README.md (6556 chars)
+2026-05-15 10:40:22.273 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\docs\agent-framework-guide.md (72646 chars)
+2026-05-15 10:40:53.503 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '编写一个冒泡排泄...' → coder
+2026-05-15 10:41:08.720 | INFO     | src.jojo.tools.builtin.python:execute_python:73 - Executed Python code (1137 chars)
+2026-05-15 10:42:06.521 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '你好...' → researcher
+2026-05-15 10:42:25.773 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '编写一个堆排序...' → coder
+2026-05-15 10:42:58.650 | INFO     | src.jojo.tools.builtin.files:write_file:54 - Wrote file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\heap_sort.py (1092 chars)
+2026-05-15 10:43:17.057 | INFO     | src.jojo.tools.builtin.python:execute_python:73 - Executed Python code (750 chars)
+2026-05-15 10:43:21.102 | INFO     | src.jojo.tools.builtin.python:execute_python:73 - Executed Python code (852 chars)
+2026-05-15 11:02:50.211 | INFO     | src.jojo.cli:main:276 - JoJo Agent v0.1.0 initializing...
+2026-05-15 11:02:50.214 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: code-review from skills\code\code-review.md
+2026-05-15 11:02:50.214 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: daily-summary from skills\productivity\daily-summary.md
+2026-05-15 11:02:50.215 | INFO     | src.jojo.skills.registry:reload:25 - Loaded 2 skills: ['code-review', 'daily-summary']
+2026-05-15 11:09:22.998 | INFO     | src.jojo.cli:main:276 - JoJo Agent v0.1.0 initializing...
+2026-05-15 11:09:37.346 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '帮我总结一下今天的工作...' → researcher
+2026-05-15 11:09:37.351 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: code-review from skills\code\code-review.md
+2026-05-15 11:09:37.352 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: daily-summary from skills\productivity\daily-summary.md
+2026-05-15 11:09:37.353 | INFO     | src.jojo.skills.registry:reload:25 - Loaded 2 skills: ['code-review', 'daily-summary']
+2026-05-15 11:09:37.353 | INFO     | src.jojo.skills.registry:match:73 - Skill match: '帮我总结一下今天的工作' → ['daily-summary']
+2026-05-15 11:09:37.747 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 11:09:38.641 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '帮我总结一下今天的工作...' → coder
+2026-05-15 11:09:38.903 | INFO     | src.jojo.skills.registry:match:73 - Skill match: '帮我总结一下今天的工作' → ['daily-summary']
+2026-05-15 11:09:42.475 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\README.md (7556 chars)
+2026-05-15 11:09:42.476 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\main.py (0 chars)
+2026-05-15 11:09:42.477 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\run.py (117 chars)
+2026-05-15 11:09:51.673 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\data\jojo.log (5948 chars)
+2026-05-15 11:09:53.575 | WARNING  | src.jojo.agent.react_loop:run:120 - Agent stopped: 达到最大迭代次数 (10)，强制终止。
+2026-05-15 11:12:00.558 | INFO     | src.jojo.cli:main:276 - JoJo Agent v0.1.0 initializing...
+2026-05-15 11:12:07.682 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '帮我总结今天的工作...' → coder
+2026-05-15 11:12:07.686 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: code-review from skills\code\code-review.md
+2026-05-15 11:12:07.687 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: daily-summary from skills\productivity\daily-summary.md
+2026-05-15 11:12:07.687 | INFO     | src.jojo.skills.registry:reload:25 - Loaded 2 skills: ['code-review', 'daily-summary']
+2026-05-15 11:12:07.687 | INFO     | src.jojo.skills.registry:match:73 - Skill match: '帮我总结今天的工作' → ['daily-summary']
+2026-05-15 11:12:08.419 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=complex, model=deepseek/deepseek-v4-pro
+2026-05-15 11:12:08.637 | INFO     | src.jojo.skills.registry:match:73 - Skill match: '帮我总结今天的工作' → ['daily-summary']
+2026-05-15 11:12:43.226 | WARNING  | src.jojo.agent.react_loop:run:120 - Agent stopped: 达到最大迭代次数 (10)，强制终止。
+2026-05-15 11:15:06.806 | INFO     | src.jojo.cli:main:283 - JoJo Agent v0.1.0 initializing...
+2026-05-15 11:15:16.079 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '帮我总结今天的工作...' → researcher
+2026-05-15 11:15:16.083 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: code-review from skills\code\code-review.md
+2026-05-15 11:15:16.084 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: daily-summary from skills\productivity\daily-summary.md
+2026-05-15 11:15:16.084 | INFO     | src.jojo.skills.registry:reload:25 - Loaded 2 skills: ['code-review', 'daily-summary']
+2026-05-15 11:15:16.084 | INFO     | src.jojo.skills.registry:match:73 - Skill match: '帮我总结今天的工作' → ['daily-summary']
+2026-05-15 11:15:17.134 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 11:15:17.336 | INFO     | src.jojo.skills.registry:match:73 - Skill match: '帮我总结今天的工作' → ['daily-summary']
+2026-05-15 11:15:32.141 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\config.yaml (768 chars)
+2026-05-15 11:15:32.142 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\pyproject.toml (745 chars)
+2026-05-15 11:15:32.143 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\main.py (0 chars)
+2026-05-15 11:15:32.144 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\run.py (117 chars)
+2026-05-15 11:15:33.896 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\cli.py (10098 chars)
+2026-05-15 11:15:35.182 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\agent\react_loop.py (9340 chars)
+2026-05-15 11:15:36.637 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\agents\researcher.py (1293 chars)
+2026-05-15 11:15:38.236 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\memory\manager.py (5459 chars)
+2026-05-15 11:15:39.564 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\orchestrator\classifier.py (1834 chars)
+2026-05-15 11:15:40.829 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\data\jojo.log (10025 chars)
+2026-05-15 11:15:42.644 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\README.md (7556 chars)
+2026-05-15 11:15:42.644 | WARNING  | src.jojo.agent.react_loop:run:120 - Agent stopped: 达到最大迭代次数 (15)，强制终止。
+2026-05-15 11:18:46.886 | INFO     | src.jojo.cli:main:283 - JoJo Agent v0.1.0 initializing...
+2026-05-15 11:19:09.992 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '帮我总结今天的工作...' → researcher
+2026-05-15 11:19:09.997 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: code-review from skills\code\code-review.md
+2026-05-15 11:19:09.998 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: daily-summary from skills\productivity\daily-summary.md
+2026-05-15 11:19:09.998 | INFO     | src.jojo.skills.registry:reload:25 - Loaded 2 skills: ['code-review', 'daily-summary']
+2026-05-15 11:19:09.998 | INFO     | src.jojo.skills.registry:match:73 - Skill match: '帮我总结今天的工作' → ['daily-summary']
+2026-05-15 11:19:10.598 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 11:19:10.824 | INFO     | src.jojo.skills.registry:match:73 - Skill match: '帮我总结今天的工作' → ['daily-summary']
+2026-05-15 11:19:20.912 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\README.md (7556 chars)
+2026-05-15 11:19:22.002 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\skills\productivity\daily-summary.md (844 chars)
+2026-05-15 11:19:23.044 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\__init__.py (0 chars)
+2026-05-15 11:19:24.280 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\config.py (3592 chars)
+2026-05-15 11:19:25.395 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\models.py (2251 chars)
+2026-05-15 11:19:26.487 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\data\jojo.log (12439 chars)
+2026-05-15 11:19:28.970 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\orchestrator\classifier.py (1834 chars)
+2026-05-15 11:19:28.971 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\orchestrator\modes.py (5216 chars)
+2026-05-15 11:19:28.971 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\skills\registry.py (2873 chars)
+2026-05-15 11:19:32.862 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\main.py (0 chars)
+2026-05-15 11:19:34.111 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\run.py (117 chars)
+2026-05-15 11:19:35.457 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\cli.py (10098 chars)
+2026-05-15 11:19:36.655 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\agents\researcher.py (1293 chars)
+2026-05-15 11:19:37.940 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\src\jojo\agents\coder.py (1289 chars)
+2026-05-15 11:19:38.899 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\config.yaml (768 chars)
+2026-05-15 11:19:40.453 | INFO     | src.jojo.tools.builtin.files:read_file:31 - Read file: D:\software\work\trae\trae_project\agent\jojo_personal_assistant\skills\code\code-review.md (1074 chars)
+2026-05-15 11:32:42.710 | INFO     | src.jojo.cli:main:354 - JoJo Agent v0.1.0 initializing...
+2026-05-15 11:38:20.670 | INFO     | src.jojo.cli:main:354 - JoJo Agent v0.1.0 initializing...
+2026-05-15 11:38:20.673 | INFO     | src.jojo.mcp.loader:load_mcp_config:71 - Loaded 1 MCP server configs from configs\mcp_servers.yaml
+2026-05-15 11:38:20.673 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: bilibili-music (stdio)
+2026-05-15 11:38:21.419 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: bilibili-music
+2026-05-15 11:38:21.424 | INFO     | src.jojo.mcp.client:list_tools:160 - MCP tools from 'bilibili-music': ['search_bilibili_music', 'list_collected_history', 'read_skipped_log', 'show_config', 'check_song_duplicates', 'discover_song_list', 'list_collected_songs', 'read_discovered_log', 'read_collected_log', 'reset_all_output_data', 'precision_search_song', 'collect_single_video', 'ensure_favorite_folder', 'collect_song_by_name', 'run_collect_flow']
+2026-05-15 11:38:21.424 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__search_bilibili_music
+2026-05-15 11:38:21.424 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_history
+2026-05-15 11:38:21.424 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_skipped_log
+2026-05-15 11:38:21.424 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__show_config
+2026-05-15 11:38:21.424 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__check_song_duplicates
+2026-05-15 11:38:21.424 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__discover_song_list
+2026-05-15 11:38:21.424 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_songs
+2026-05-15 11:38:21.424 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_discovered_log
+2026-05-15 11:38:21.424 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_collected_log
+2026-05-15 11:38:21.424 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__reset_all_output_data
+2026-05-15 11:38:21.424 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__precision_search_song
+2026-05-15 11:38:21.425 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_single_video
+2026-05-15 11:38:21.425 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__ensure_favorite_folder
+2026-05-15 11:38:21.425 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_song_by_name
+2026-05-15 11:38:21.425 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__run_collect_flow
+2026-05-15 11:38:21.425 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 15 MCP tools from 'bilibili-music': ['mcp__bilibili-music__search_bilibili_music', 'mcp__bilibili-music__list_collected_history', 'mcp__bilibili-music__read_skipped_log', 'mcp__bilibili-music__show_config', 'mcp__bilibili-music__check_song_duplicates', 'mcp__bilibili-music__discover_song_list', 'mcp__bilibili-music__list_collected_songs', 'mcp__bilibili-music__read_discovered_log', 'mcp__bilibili-music__read_collected_log', 'mcp__bilibili-music__reset_all_output_data', 'mcp__bilibili-music__precision_search_song', 'mcp__bilibili-music__collect_single_video', 'mcp__bilibili-music__ensure_favorite_folder', 'mcp__bilibili-music__collect_song_by_name', 'mcp__bilibili-music__run_collect_flow']
+2026-05-15 11:40:00.525 | INFO     | src.jojo.cli:main:354 - JoJo Agent v0.1.0 initializing...
+2026-05-15 11:40:00.592 | INFO     | src.jojo.mcp.loader:load_mcp_config:71 - Loaded 1 MCP server configs from configs\mcp_servers.yaml
+2026-05-15 11:40:00.592 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: bilibili-music (stdio)
+2026-05-15 11:40:01.370 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: bilibili-music
+2026-05-15 11:40:01.373 | INFO     | src.jojo.mcp.client:list_tools:160 - MCP tools from 'bilibili-music': ['search_bilibili_music', 'list_collected_history', 'read_skipped_log', 'show_config', 'check_song_duplicates', 'discover_song_list', 'list_collected_songs', 'read_discovered_log', 'read_collected_log', 'reset_all_output_data', 'precision_search_song', 'collect_single_video', 'ensure_favorite_folder', 'collect_song_by_name', 'run_collect_flow']
+2026-05-15 11:40:01.373 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__search_bilibili_music
+2026-05-15 11:40:01.373 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_history
+2026-05-15 11:40:01.373 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_skipped_log
+2026-05-15 11:40:01.373 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__show_config
+2026-05-15 11:40:01.373 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__check_song_duplicates
+2026-05-15 11:40:01.373 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__discover_song_list
+2026-05-15 11:40:01.374 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_songs
+2026-05-15 11:40:01.374 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_discovered_log
+2026-05-15 11:40:01.374 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_collected_log
+2026-05-15 11:40:01.374 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__reset_all_output_data
+2026-05-15 11:40:01.374 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__precision_search_song
+2026-05-15 11:40:01.374 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_single_video
+2026-05-15 11:40:01.374 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__ensure_favorite_folder
+2026-05-15 11:40:01.374 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_song_by_name
+2026-05-15 11:40:01.374 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__run_collect_flow
+2026-05-15 11:40:01.374 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 15 MCP tools from 'bilibili-music': ['mcp__bilibili-music__search_bilibili_music', 'mcp__bilibili-music__list_collected_history', 'mcp__bilibili-music__read_skipped_log', 'mcp__bilibili-music__show_config', 'mcp__bilibili-music__check_song_duplicates', 'mcp__bilibili-music__discover_song_list', 'mcp__bilibili-music__list_collected_songs', 'mcp__bilibili-music__read_discovered_log', 'mcp__bilibili-music__read_collected_log', 'mcp__bilibili-music__reset_all_output_data', 'mcp__bilibili-music__precision_search_song', 'mcp__bilibili-music__collect_single_video', 'mcp__bilibili-music__ensure_favorite_folder', 'mcp__bilibili-music__collect_song_by_name', 'mcp__bilibili-music__run_collect_flow']
+2026-05-15 11:40:24.574 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '我之前收藏了哪些视频...' → researcher
+2026-05-15 11:40:24.577 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: code-review from skills\code\code-review.md
+2026-05-15 11:40:24.578 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: daily-summary from skills\productivity\daily-summary.md
+2026-05-15 11:40:24.578 | INFO     | src.jojo.skills.registry:reload:25 - Loaded 2 skills: ['code-review', 'daily-summary']
+2026-05-15 11:40:25.265 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 11:41:43.284 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '从网易云发现所有乐队的准确歌单...' → researcher
+2026-05-15 11:41:44.114 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=complex, model=deepseek/deepseek-v4-pro

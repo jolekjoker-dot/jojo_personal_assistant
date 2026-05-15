@@ -1,0 +1,7 @@
+pyproject.toml
+src/jojo/__init__.py
+src/jojo.egg-info/PKG-INFO
+src/jojo.egg-info/SOURCES.txt
+src/jojo.egg-info/dependency_links.txt
+src/jojo.egg-info/requires.txt
+src/jojo.egg-info/top_level.txt

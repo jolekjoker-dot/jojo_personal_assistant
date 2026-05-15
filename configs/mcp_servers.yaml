@@ -1,0 +1,26 @@
+# MCP Server 配置文件
+# 格式兼容 Claude Code 的 mcp_servers 配置
+
+mcp_servers:
+  playwright:
+    transport: stdio
+    command: npx.cmd
+    args:
+      - "-y"
+      - "@playwright/mcp"
+      - "--browser=chrome"
+    # Windows 上用 npx.cmd，如需更多参数追加到 args
+
+  bilibili-music:
+    transport: stdio
+    command: python
+    args:
+      - "mcp_server.py"
+    cwd: "d:/software/work/trae/trae_project/workflow/find_music"
+
+  xhs-kb:
+    transport: stdio
+    command: python
+    args:
+      - "mcp_server/xhs_server.py"
+    cwd: "d:/software/work/trae/trae_project/workflow/find_knowledge"

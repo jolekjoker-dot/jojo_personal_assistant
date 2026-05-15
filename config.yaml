@@ -1,0 +1,35 @@
+# JoJo Agent 配置文件
+# 敏感信息 (API Key) 请在 .env 文件中设置，不要写在这里
+
+project_name: jojo
+version: 0.1.0
+log_level: INFO
+log_file: data/jojo.log
+skills_dir: skills
+mcp_config_path: configs/mcp_servers.yaml
+
+llm:
+  default_model: deepseek/deepseek-chat
+  temperature: 0.7
+  max_tokens: 4096
+
+memory:
+  working_max_messages: 20
+  short_term_ttl_seconds: 3600
+  long_term_db_path: data/memory.db
+  vector_store_path: data/chroma
+
+agent:
+  max_iterations: 30
+  verbose: false
+  workspace_root: "."
+  allowed_dirs: ["data", "output"]
+
+orchestrator:
+  classifier_model: deepseek/deepseek-chat      # 分类器（便宜够用）
+  flash_model: deepseek/deepseek-v4-flash       # 简单任务（快速）
+  pro_model: deepseek/deepseek-v4-pro           # 复杂任务（深度推理）
+
+scheduler:
+  db_path: data/scheduler.db
+  max_retries: 3
