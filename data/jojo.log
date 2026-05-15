@@ -151,3 +151,348 @@
 2026-05-15 11:40:25.265 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
 2026-05-15 11:41:43.284 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '从网易云发现所有乐队的准确歌单...' → researcher
 2026-05-15 11:41:44.114 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=complex, model=deepseek/deepseek-v4-pro
+2026-05-15 20:38:00.374 | INFO     | src.jojo.cli:main:412 - JoJo Agent v0.1.0 initializing...
+2026-05-15 20:38:41.810 | INFO     | src.jojo.cli:main:422 - JoJo Agent v0.1.0 initializing...
+2026-05-15 20:38:41.966 | INFO     | src.jojo.scheduler.engine:start:49 - Scheduler started with 4 jobs
+2026-05-15 20:38:41.973 | INFO     | src.jojo.scheduler.engine:add_job:67 - Job added: weather-kunming (30 9 * * *) → researcher
+2026-05-15 20:38:58.527 | INFO     | src.jojo.cli:main:422 - JoJo Agent v0.1.0 initializing...
+2026-05-15 20:38:58.680 | INFO     | src.jojo.scheduler.engine:start:49 - Scheduler started with 5 jobs
+2026-05-15 20:39:12.004 | INFO     | src.jojo.cli:main:422 - JoJo Agent v0.1.0 initializing...
+2026-05-15 20:39:12.162 | INFO     | src.jojo.scheduler.engine:start:49 - Scheduler started with 5 jobs
+2026-05-15 20:39:12.168 | INFO     | src.jojo.scheduler.engine:remove_job:78 - Job removed: j5
+2026-05-15 20:39:16.275 | INFO     | src.jojo.cli:main:422 - JoJo Agent v0.1.0 initializing...
+2026-05-15 20:39:16.427 | INFO     | src.jojo.scheduler.engine:start:49 - Scheduler started with 4 jobs
+2026-05-15 20:39:16.433 | INFO     | src.jojo.scheduler.engine:remove_job:78 - Job removed: j2
+2026-05-15 20:39:20.123 | INFO     | src.jojo.cli:main:422 - JoJo Agent v0.1.0 initializing...
+2026-05-15 20:39:20.291 | INFO     | src.jojo.scheduler.engine:start:49 - Scheduler started with 3 jobs
+2026-05-15 20:39:20.297 | INFO     | src.jojo.scheduler.engine:remove_job:78 - Job removed: j3
+2026-05-15 20:39:24.173 | INFO     | src.jojo.cli:main:422 - JoJo Agent v0.1.0 initializing...
+2026-05-15 20:39:24.324 | INFO     | src.jojo.scheduler.engine:start:49 - Scheduler started with 2 jobs
+2026-05-15 20:39:24.330 | INFO     | src.jojo.scheduler.engine:remove_job:78 - Job removed: j1
+2026-05-15 20:43:19.081 | INFO     | src.jojo.cli:main:422 - JoJo Agent v0.1.0 initializing...
+2026-05-15 20:43:19.227 | INFO     | src.jojo.scheduler.engine:start:49 - Scheduler started with 1 jobs
+2026-05-15 20:47:38.079 | INFO     | src.jojo.cli:main:422 - JoJo Agent v0.1.0 initializing...
+2026-05-15 20:47:38.147 | INFO     | src.jojo.mcp.loader:load_mcp_config:71 - Loaded 3 MCP server configs from configs\mcp_servers.yaml
+2026-05-15 20:47:38.147 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: playwright (stdio)
+2026-05-15 20:47:39.857 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: playwright
+2026-05-15 20:47:39.861 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'playwright': ['browser_close', 'browser_resize', 'browser_console_messages', 'browser_handle_dialog', 'browser_evaluate', 'browser_file_upload', 'browser_drop', 'browser_fill_form', 'browser_press_key', 'browser_type', 'browser_navigate', 'browser_navigate_back', 'browser_network_requests', 'browser_network_request', 'browser_run_code_unsafe', 'browser_take_screenshot', 'browser_snapshot', 'browser_click', 'browser_drag', 'browser_hover', 'browser_select_option', 'browser_tabs', 'browser_wait_for']
+2026-05-15 20:47:39.861 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_close
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_resize
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_console_messages
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_handle_dialog
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_evaluate
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_file_upload
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_drop
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_fill_form
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_press_key
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_type
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_navigate
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_navigate_back
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_network_requests
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_network_request
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_run_code_unsafe
+2026-05-15 20:47:39.862 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_take_screenshot
+2026-05-15 20:47:39.863 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_snapshot
+2026-05-15 20:47:39.863 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_click
+2026-05-15 20:47:39.863 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_drag
+2026-05-15 20:47:39.863 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_hover
+2026-05-15 20:47:39.863 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_select_option
+2026-05-15 20:47:39.863 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_tabs
+2026-05-15 20:47:39.863 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_wait_for
+2026-05-15 20:47:39.863 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 23 MCP tools from 'playwright': ['mcp__playwright__browser_close', 'mcp__playwright__browser_resize', 'mcp__playwright__browser_console_messages', 'mcp__playwright__browser_handle_dialog', 'mcp__playwright__browser_evaluate', 'mcp__playwright__browser_file_upload', 'mcp__playwright__browser_drop', 'mcp__playwright__browser_fill_form', 'mcp__playwright__browser_press_key', 'mcp__playwright__browser_type', 'mcp__playwright__browser_navigate', 'mcp__playwright__browser_navigate_back', 'mcp__playwright__browser_network_requests', 'mcp__playwright__browser_network_request', 'mcp__playwright__browser_run_code_unsafe', 'mcp__playwright__browser_take_screenshot', 'mcp__playwright__browser_snapshot', 'mcp__playwright__browser_click', 'mcp__playwright__browser_drag', 'mcp__playwright__browser_hover', 'mcp__playwright__browser_select_option', 'mcp__playwright__browser_tabs', 'mcp__playwright__browser_wait_for']
+2026-05-15 20:47:39.863 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: bilibili-music (stdio)
+2026-05-15 20:47:40.641 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: bilibili-music
+2026-05-15 20:47:40.646 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'bilibili-music': ['search_bilibili_music', 'list_collected_history', 'read_skipped_log', 'show_config', 'check_song_duplicates', 'discover_song_list', 'list_collected_songs', 'read_discovered_log', 'read_collected_log', 'reset_all_output_data', 'precision_search_song', 'collect_single_video', 'ensure_favorite_folder', 'collect_song_by_name', 'run_collect_flow']
+2026-05-15 20:47:40.646 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__search_bilibili_music
+2026-05-15 20:47:40.646 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_history
+2026-05-15 20:47:40.646 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_skipped_log
+2026-05-15 20:47:40.646 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__show_config
+2026-05-15 20:47:40.646 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__check_song_duplicates
+2026-05-15 20:47:40.646 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__discover_song_list
+2026-05-15 20:47:40.646 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_songs
+2026-05-15 20:47:40.646 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_discovered_log
+2026-05-15 20:47:40.646 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_collected_log
+2026-05-15 20:47:40.646 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__reset_all_output_data
+2026-05-15 20:47:40.647 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__precision_search_song
+2026-05-15 20:47:40.647 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_single_video
+2026-05-15 20:47:40.647 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__ensure_favorite_folder
+2026-05-15 20:47:40.647 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_song_by_name
+2026-05-15 20:47:40.647 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__run_collect_flow
+2026-05-15 20:47:40.647 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 15 MCP tools from 'bilibili-music': ['mcp__bilibili-music__search_bilibili_music', 'mcp__bilibili-music__list_collected_history', 'mcp__bilibili-music__read_skipped_log', 'mcp__bilibili-music__show_config', 'mcp__bilibili-music__check_song_duplicates', 'mcp__bilibili-music__discover_song_list', 'mcp__bilibili-music__list_collected_songs', 'mcp__bilibili-music__read_discovered_log', 'mcp__bilibili-music__read_collected_log', 'mcp__bilibili-music__reset_all_output_data', 'mcp__bilibili-music__precision_search_song', 'mcp__bilibili-music__collect_single_video', 'mcp__bilibili-music__ensure_favorite_folder', 'mcp__bilibili-music__collect_song_by_name', 'mcp__bilibili-music__run_collect_flow']
+2026-05-15 20:47:40.647 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: xhs-kb (stdio)
+2026-05-15 20:47:51.089 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: 2026-05-15 20:47:51 | INFO    | src.kb_agent.indexer | Downloading embedding mod
+2026-05-15 20:47:52.433 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: Downloading Model from https://www.modelscope.cn to directory: C:\Users\jojo\.ca
+2026-05-15 20:47:52.617 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: 2026-05-15 20:47:52 | INFO    | src.kb_agent.indexer | Embedding model ready (di
+2026-05-15 20:47:52.625 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: xhs-kb
+2026-05-15 20:47:52.626 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'xhs-kb': ['run_pipeline', 'search_xhs', 'search_kb']
+2026-05-15 20:47:52.626 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__run_pipeline
+2026-05-15 20:47:52.627 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__search_xhs
+2026-05-15 20:47:52.627 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__search_kb
+2026-05-15 20:47:52.627 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 3 MCP tools from 'xhs-kb': ['mcp__xhs-kb__run_pipeline', 'mcp__xhs-kb__search_xhs', 'mcp__xhs-kb__search_kb']
+2026-05-15 20:47:52.747 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: add_cron_job
+2026-05-15 20:47:52.747 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: remove_cron_job
+2026-05-15 20:47:52.747 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: list_cron_jobs
+2026-05-15 20:47:52.747 | INFO     | src.jojo.scheduler.engine:start:49 - Scheduler started with 1 jobs
+2026-05-15 20:48:02.565 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '我现在有哪些定时任务...' → researcher
+2026-05-15 20:48:02.569 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: code-review from skills\code\code-review.md
+2026-05-15 20:48:02.570 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: daily-summary from skills\productivity\daily-summary.md
+2026-05-15 20:48:02.570 | INFO     | src.jojo.skills.registry:reload:25 - Loaded 2 skills: ['code-review', 'daily-summary']
+2026-05-15 20:48:03.480 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 20:48:14.578 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '取消这个定时任务...' → coder
+2026-05-15 20:48:30.101 | INFO     | src.jojo.scheduler.engine:remove_job:78 - Job removed: job_3d8138d5bf04
+2026-05-15 20:48:52.586 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '设定一个定时任务，在每天晚上八点50，汇报当天的天气...' → coder
+2026-05-15 20:48:53.146 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=complex, model=deepseek/deepseek-v4-pro
+2026-05-15 20:49:13.907 | INFO     | src.jojo.scheduler.engine:add_job:67 - Job added: weather-report (50 20 * * *) → researcher
+2026-05-15 20:49:43.968 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '所以一分钟之后你会在这个界面的窗口下给我发送吗...' → coder
+2026-05-15 20:50:48.270 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '你刚刚执行定时任务了吗...' → researcher
+2026-05-15 20:51:02.723 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '我现在有哪些定时任务...' → researcher
+2026-05-15 20:51:04.149 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 20:51:25.859 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '那你刚刚执行这一个定时任务了吗...' → coder
+2026-05-15 20:51:52.161 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '目前有一个晚上8点50的定时任务，你刚刚执行了吗...' → researcher
+2026-05-15 20:51:53.133 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 20:53:57.022 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '那现在有定时任务吗...' → researcher
+2026-05-15 20:54:04.943 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '取消...' → coder
+2026-05-15 20:54:11.720 | INFO     | src.jojo.scheduler.engine:remove_job:78 - Job removed: job_a632699ad1a4
+2026-05-15 20:57:34.902 | INFO     | src.jojo.cli:main:427 - JoJo Agent v0.1.0 initializing...
+2026-05-15 20:57:34.968 | INFO     | src.jojo.mcp.loader:load_mcp_config:71 - Loaded 3 MCP server configs from configs\mcp_servers.yaml
+2026-05-15 20:57:34.968 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: playwright (stdio)
+2026-05-15 20:57:37.545 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: playwright
+2026-05-15 20:57:37.549 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'playwright': ['browser_close', 'browser_resize', 'browser_console_messages', 'browser_handle_dialog', 'browser_evaluate', 'browser_file_upload', 'browser_drop', 'browser_fill_form', 'browser_press_key', 'browser_type', 'browser_navigate', 'browser_navigate_back', 'browser_network_requests', 'browser_network_request', 'browser_run_code_unsafe', 'browser_take_screenshot', 'browser_snapshot', 'browser_click', 'browser_drag', 'browser_hover', 'browser_select_option', 'browser_tabs', 'browser_wait_for']
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_close
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_resize
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_console_messages
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_handle_dialog
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_evaluate
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_file_upload
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_drop
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_fill_form
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_press_key
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_type
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_navigate
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_navigate_back
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_network_requests
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_network_request
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_run_code_unsafe
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_take_screenshot
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_snapshot
+2026-05-15 20:57:37.550 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_click
+2026-05-15 20:57:37.551 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_drag
+2026-05-15 20:57:37.551 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_hover
+2026-05-15 20:57:37.551 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_select_option
+2026-05-15 20:57:37.551 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_tabs
+2026-05-15 20:57:37.551 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_wait_for
+2026-05-15 20:57:37.551 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 23 MCP tools from 'playwright': ['mcp__playwright__browser_close', 'mcp__playwright__browser_resize', 'mcp__playwright__browser_console_messages', 'mcp__playwright__browser_handle_dialog', 'mcp__playwright__browser_evaluate', 'mcp__playwright__browser_file_upload', 'mcp__playwright__browser_drop', 'mcp__playwright__browser_fill_form', 'mcp__playwright__browser_press_key', 'mcp__playwright__browser_type', 'mcp__playwright__browser_navigate', 'mcp__playwright__browser_navigate_back', 'mcp__playwright__browser_network_requests', 'mcp__playwright__browser_network_request', 'mcp__playwright__browser_run_code_unsafe', 'mcp__playwright__browser_take_screenshot', 'mcp__playwright__browser_snapshot', 'mcp__playwright__browser_click', 'mcp__playwright__browser_drag', 'mcp__playwright__browser_hover', 'mcp__playwright__browser_select_option', 'mcp__playwright__browser_tabs', 'mcp__playwright__browser_wait_for']
+2026-05-15 20:57:37.551 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: bilibili-music (stdio)
+2026-05-15 20:57:38.301 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: bilibili-music
+2026-05-15 20:57:38.306 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'bilibili-music': ['search_bilibili_music', 'list_collected_history', 'read_skipped_log', 'show_config', 'check_song_duplicates', 'discover_song_list', 'list_collected_songs', 'read_discovered_log', 'read_collected_log', 'reset_all_output_data', 'precision_search_song', 'collect_single_video', 'ensure_favorite_folder', 'collect_song_by_name', 'run_collect_flow']
+2026-05-15 20:57:38.306 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__search_bilibili_music
+2026-05-15 20:57:38.306 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_history
+2026-05-15 20:57:38.306 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_skipped_log
+2026-05-15 20:57:38.306 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__show_config
+2026-05-15 20:57:38.306 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__check_song_duplicates
+2026-05-15 20:57:38.306 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__discover_song_list
+2026-05-15 20:57:38.306 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_songs
+2026-05-15 20:57:38.306 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_discovered_log
+2026-05-15 20:57:38.306 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_collected_log
+2026-05-15 20:57:38.306 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__reset_all_output_data
+2026-05-15 20:57:38.306 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__precision_search_song
+2026-05-15 20:57:38.308 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_single_video
+2026-05-15 20:57:38.308 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__ensure_favorite_folder
+2026-05-15 20:57:38.308 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_song_by_name
+2026-05-15 20:57:38.308 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__run_collect_flow
+2026-05-15 20:57:38.308 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 15 MCP tools from 'bilibili-music': ['mcp__bilibili-music__search_bilibili_music', 'mcp__bilibili-music__list_collected_history', 'mcp__bilibili-music__read_skipped_log', 'mcp__bilibili-music__show_config', 'mcp__bilibili-music__check_song_duplicates', 'mcp__bilibili-music__discover_song_list', 'mcp__bilibili-music__list_collected_songs', 'mcp__bilibili-music__read_discovered_log', 'mcp__bilibili-music__read_collected_log', 'mcp__bilibili-music__reset_all_output_data', 'mcp__bilibili-music__precision_search_song', 'mcp__bilibili-music__collect_single_video', 'mcp__bilibili-music__ensure_favorite_folder', 'mcp__bilibili-music__collect_song_by_name', 'mcp__bilibili-music__run_collect_flow']
+2026-05-15 20:57:38.308 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: xhs-kb (stdio)
+2026-05-15 20:57:47.356 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: 2026-05-15 20:57:47 | INFO    | src.kb_agent.indexer | Downloading embedding mod
+2026-05-15 20:57:48.786 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: Downloading Model from https://www.modelscope.cn to directory: C:\Users\jojo\.ca
+2026-05-15 20:57:48.943 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: 2026-05-15 20:57:48 | INFO    | src.kb_agent.indexer | Embedding model ready (di
+2026-05-15 20:57:48.953 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: xhs-kb
+2026-05-15 20:57:48.955 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'xhs-kb': ['run_pipeline', 'search_xhs', 'search_kb']
+2026-05-15 20:57:48.955 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__run_pipeline
+2026-05-15 20:57:48.955 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__search_xhs
+2026-05-15 20:57:48.955 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__search_kb
+2026-05-15 20:57:48.955 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 3 MCP tools from 'xhs-kb': ['mcp__xhs-kb__run_pipeline', 'mcp__xhs-kb__search_xhs', 'mcp__xhs-kb__search_kb']
+2026-05-15 20:57:49.088 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: add_cron_job
+2026-05-15 20:57:49.088 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: remove_cron_job
+2026-05-15 20:57:49.088 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: list_cron_jobs
+2026-05-15 20:57:49.089 | INFO     | src.jojo.scheduler.engine:start:50 - Scheduler started with 4 jobs
+2026-05-15 20:58:13.879 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '设定一个晚上九点的查看当天天气的定时任务...' → coder
+2026-05-15 20:58:13.884 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: code-review from skills\code\code-review.md
+2026-05-15 20:58:13.884 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: daily-summary from skills\productivity\daily-summary.md
+2026-05-15 20:58:13.884 | INFO     | src.jojo.skills.registry:reload:25 - Loaded 2 skills: ['code-review', 'daily-summary']
+2026-05-15 20:58:14.423 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=complex, model=deepseek/deepseek-v4-pro
+2026-05-15 20:58:35.078 | INFO     | src.jojo.scheduler.engine:add_job:68 - Job added: evening-weather (0 21 * * *) → researcher
+2026-05-15 21:01:16.025 | INFO     | src.jojo.cli:main:427 - JoJo Agent v0.1.0 initializing...
+2026-05-15 21:01:16.169 | INFO     | src.jojo.scheduler.engine:start:50 - Scheduler started with 5 jobs
+2026-05-15 21:01:35.250 | INFO     | src.jojo.cli:main:427 - JoJo Agent v0.1.0 initializing...
+2026-05-15 21:01:35.403 | INFO     | src.jojo.scheduler.engine:start:50 - Scheduler started with 5 jobs
+2026-05-15 21:01:35.405 | INFO     | src.jojo.scheduler.engine:remove_job:79 - Job removed: j5
+2026-05-15 21:01:39.991 | INFO     | src.jojo.cli:main:427 - JoJo Agent v0.1.0 initializing...
+2026-05-15 21:01:40.144 | INFO     | src.jojo.scheduler.engine:start:50 - Scheduler started with 4 jobs
+2026-05-15 21:01:40.146 | INFO     | src.jojo.scheduler.engine:remove_job:79 - Job removed: j2
+2026-05-15 21:01:46.391 | INFO     | src.jojo.cli:main:427 - JoJo Agent v0.1.0 initializing...
+2026-05-15 21:01:46.538 | INFO     | src.jojo.scheduler.engine:start:50 - Scheduler started with 3 jobs
+2026-05-15 21:01:46.540 | INFO     | src.jojo.scheduler.engine:remove_job:79 - Job removed: j3
+2026-05-15 21:01:50.233 | INFO     | src.jojo.cli:main:427 - JoJo Agent v0.1.0 initializing...
+2026-05-15 21:01:50.380 | INFO     | src.jojo.scheduler.engine:start:50 - Scheduler started with 2 jobs
+2026-05-15 21:01:50.382 | INFO     | src.jojo.scheduler.engine:remove_job:79 - Job removed: j1
+2026-05-15 21:04:52.231 | INFO     | src.jojo.cli:main:431 - JoJo Agent v0.1.0 initializing...
+2026-05-15 21:04:52.297 | INFO     | src.jojo.mcp.loader:load_mcp_config:71 - Loaded 3 MCP server configs from configs\mcp_servers.yaml
+2026-05-15 21:04:52.297 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: playwright (stdio)
+2026-05-15 21:04:53.915 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: playwright
+2026-05-15 21:04:53.919 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'playwright': ['browser_close', 'browser_resize', 'browser_console_messages', 'browser_handle_dialog', 'browser_evaluate', 'browser_file_upload', 'browser_drop', 'browser_fill_form', 'browser_press_key', 'browser_type', 'browser_navigate', 'browser_navigate_back', 'browser_network_requests', 'browser_network_request', 'browser_run_code_unsafe', 'browser_take_screenshot', 'browser_snapshot', 'browser_click', 'browser_drag', 'browser_hover', 'browser_select_option', 'browser_tabs', 'browser_wait_for']
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_close
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_resize
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_console_messages
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_handle_dialog
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_evaluate
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_file_upload
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_drop
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_fill_form
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_press_key
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_type
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_navigate
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_navigate_back
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_network_requests
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_network_request
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_run_code_unsafe
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_take_screenshot
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_snapshot
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_click
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_drag
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_hover
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_select_option
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_tabs
+2026-05-15 21:04:53.921 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_wait_for
+2026-05-15 21:04:53.921 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 23 MCP tools from 'playwright': ['mcp__playwright__browser_close', 'mcp__playwright__browser_resize', 'mcp__playwright__browser_console_messages', 'mcp__playwright__browser_handle_dialog', 'mcp__playwright__browser_evaluate', 'mcp__playwright__browser_file_upload', 'mcp__playwright__browser_drop', 'mcp__playwright__browser_fill_form', 'mcp__playwright__browser_press_key', 'mcp__playwright__browser_type', 'mcp__playwright__browser_navigate', 'mcp__playwright__browser_navigate_back', 'mcp__playwright__browser_network_requests', 'mcp__playwright__browser_network_request', 'mcp__playwright__browser_run_code_unsafe', 'mcp__playwright__browser_take_screenshot', 'mcp__playwright__browser_snapshot', 'mcp__playwright__browser_click', 'mcp__playwright__browser_drag', 'mcp__playwright__browser_hover', 'mcp__playwright__browser_select_option', 'mcp__playwright__browser_tabs', 'mcp__playwright__browser_wait_for']
+2026-05-15 21:04:53.922 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: bilibili-music (stdio)
+2026-05-15 21:04:54.728 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: bilibili-music
+2026-05-15 21:04:54.733 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'bilibili-music': ['search_bilibili_music', 'list_collected_history', 'read_skipped_log', 'show_config', 'check_song_duplicates', 'discover_song_list', 'list_collected_songs', 'read_discovered_log', 'read_collected_log', 'reset_all_output_data', 'precision_search_song', 'collect_single_video', 'ensure_favorite_folder', 'collect_song_by_name', 'run_collect_flow']
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__search_bilibili_music
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_history
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_skipped_log
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__show_config
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__check_song_duplicates
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__discover_song_list
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_songs
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_discovered_log
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_collected_log
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__reset_all_output_data
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__precision_search_song
+2026-05-15 21:04:54.733 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_single_video
+2026-05-15 21:04:54.734 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__ensure_favorite_folder
+2026-05-15 21:04:54.734 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_song_by_name
+2026-05-15 21:04:54.734 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__run_collect_flow
+2026-05-15 21:04:54.734 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 15 MCP tools from 'bilibili-music': ['mcp__bilibili-music__search_bilibili_music', 'mcp__bilibili-music__list_collected_history', 'mcp__bilibili-music__read_skipped_log', 'mcp__bilibili-music__show_config', 'mcp__bilibili-music__check_song_duplicates', 'mcp__bilibili-music__discover_song_list', 'mcp__bilibili-music__list_collected_songs', 'mcp__bilibili-music__read_discovered_log', 'mcp__bilibili-music__read_collected_log', 'mcp__bilibili-music__reset_all_output_data', 'mcp__bilibili-music__precision_search_song', 'mcp__bilibili-music__collect_single_video', 'mcp__bilibili-music__ensure_favorite_folder', 'mcp__bilibili-music__collect_song_by_name', 'mcp__bilibili-music__run_collect_flow']
+2026-05-15 21:04:54.734 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: xhs-kb (stdio)
+2026-05-15 21:05:03.406 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: 2026-05-15 21:05:03 | INFO    | src.kb_agent.indexer | Downloading embedding mod
+2026-05-15 21:05:04.769 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: Downloading Model from https://www.modelscope.cn to directory: C:\Users\jojo\.ca
+2026-05-15 21:05:04.906 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: 2026-05-15 21:05:04 | INFO    | src.kb_agent.indexer | Embedding model ready (di
+2026-05-15 21:05:04.914 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: xhs-kb
+2026-05-15 21:05:04.915 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'xhs-kb': ['run_pipeline', 'search_xhs', 'search_kb']
+2026-05-15 21:05:04.916 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__run_pipeline
+2026-05-15 21:05:04.916 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__search_xhs
+2026-05-15 21:05:04.916 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__search_kb
+2026-05-15 21:05:04.916 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 3 MCP tools from 'xhs-kb': ['mcp__xhs-kb__run_pipeline', 'mcp__xhs-kb__search_xhs', 'mcp__xhs-kb__search_kb']
+2026-05-15 21:05:05.043 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: add_cron_job
+2026-05-15 21:05:05.043 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: remove_cron_job
+2026-05-15 21:05:05.043 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: list_cron_jobs
+2026-05-15 21:05:05.044 | INFO     | src.jojo.scheduler.engine:start:50 - Scheduler started with 5 jobs
+2026-05-15 21:05:17.731 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '目前有哪些自动化任务？...' → researcher
+2026-05-15 21:05:17.735 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: code-review from skills\code\code-review.md
+2026-05-15 21:05:17.736 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: daily-summary from skills\productivity\daily-summary.md
+2026-05-15 21:05:17.736 | INFO     | src.jojo.skills.registry:reload:25 - Loaded 2 skills: ['code-review', 'daily-summary']
+2026-05-15 21:05:18.417 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 21:06:00.013 | INFO     | src.jojo.scheduler.engine:_execute:119 - Executing job: run-test — x
+2026-05-15 21:08:35.827 | INFO     | src.jojo.orchestrator.router:route:54 - Router: 'n...' → researcher
+2026-05-15 21:08:37.176 | WARNING  | src.jojo.agent.react_loop:run:120 - Agent stopped: 执行超时 (157s > 120s)，强制终止。
+2026-05-15 21:08:37.310 | DEBUG    | src.jojo.memory.long_term:add:131 - Long-term memory added: mem_456a86573366 (score=0.580)
+2026-05-15 21:08:37.310 | INFO     | src.jojo.scheduler.engine:_execute:148 - Job 'run-test' completed: 执行超时 (157s > 120s)，强制终止。...
+2026-05-15 21:08:50.433 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '目前有哪些自动化任务？...' → researcher
+2026-05-15 21:08:51.205 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 21:09:00.009 | INFO     | src.jojo.scheduler.engine:_execute:119 - Executing job: run-test — x
+2026-05-15 21:09:01.922 | DEBUG    | src.jojo.memory.long_term:add:131 - Long-term memory added: mem_768ff9d6f13b (score=0.580)
+2026-05-15 21:09:01.922 | INFO     | src.jojo.scheduler.engine:_execute:148 - Job 'run-test' completed: 好的！请问有什么我可以帮您的？如果您有具体的任务或问题，请告诉我，我会尽力协助您。...
+2026-05-15 21:10:16.575 | INFO     | src.jojo.cli:main:431 - JoJo Agent v0.1.0 initializing...
+2026-05-15 21:10:16.730 | INFO     | src.jojo.scheduler.engine:start:50 - Scheduler started with 5 jobs
+2026-05-15 21:11:29.139 | INFO     | src.jojo.cli:main:431 - JoJo Agent v0.1.0 initializing...
+2026-05-15 21:11:29.202 | INFO     | src.jojo.mcp.loader:load_mcp_config:71 - Loaded 3 MCP server configs from configs\mcp_servers.yaml
+2026-05-15 21:11:29.202 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: playwright (stdio)
+2026-05-15 21:11:31.635 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: playwright
+2026-05-15 21:11:31.639 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'playwright': ['browser_close', 'browser_resize', 'browser_console_messages', 'browser_handle_dialog', 'browser_evaluate', 'browser_file_upload', 'browser_drop', 'browser_fill_form', 'browser_press_key', 'browser_type', 'browser_navigate', 'browser_navigate_back', 'browser_network_requests', 'browser_network_request', 'browser_run_code_unsafe', 'browser_take_screenshot', 'browser_snapshot', 'browser_click', 'browser_drag', 'browser_hover', 'browser_select_option', 'browser_tabs', 'browser_wait_for']
+2026-05-15 21:11:31.639 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_close
+2026-05-15 21:11:31.639 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_resize
+2026-05-15 21:11:31.639 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_console_messages
+2026-05-15 21:11:31.639 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_handle_dialog
+2026-05-15 21:11:31.639 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_evaluate
+2026-05-15 21:11:31.639 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_file_upload
+2026-05-15 21:11:31.639 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_drop
+2026-05-15 21:11:31.639 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_fill_form
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_press_key
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_type
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_navigate
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_navigate_back
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_network_requests
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_network_request
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_run_code_unsafe
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_take_screenshot
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_snapshot
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_click
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_drag
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_hover
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_select_option
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_tabs
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__playwright__browser_wait_for
+2026-05-15 21:11:31.640 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 23 MCP tools from 'playwright': ['mcp__playwright__browser_close', 'mcp__playwright__browser_resize', 'mcp__playwright__browser_console_messages', 'mcp__playwright__browser_handle_dialog', 'mcp__playwright__browser_evaluate', 'mcp__playwright__browser_file_upload', 'mcp__playwright__browser_drop', 'mcp__playwright__browser_fill_form', 'mcp__playwright__browser_press_key', 'mcp__playwright__browser_type', 'mcp__playwright__browser_navigate', 'mcp__playwright__browser_navigate_back', 'mcp__playwright__browser_network_requests', 'mcp__playwright__browser_network_request', 'mcp__playwright__browser_run_code_unsafe', 'mcp__playwright__browser_take_screenshot', 'mcp__playwright__browser_snapshot', 'mcp__playwright__browser_click', 'mcp__playwright__browser_drag', 'mcp__playwright__browser_hover', 'mcp__playwright__browser_select_option', 'mcp__playwright__browser_tabs', 'mcp__playwright__browser_wait_for']
+2026-05-15 21:11:31.640 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: bilibili-music (stdio)
+2026-05-15 21:11:32.365 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: bilibili-music
+2026-05-15 21:11:32.367 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'bilibili-music': ['search_bilibili_music', 'list_collected_history', 'read_skipped_log', 'show_config', 'check_song_duplicates', 'discover_song_list', 'list_collected_songs', 'read_discovered_log', 'read_collected_log', 'reset_all_output_data', 'precision_search_song', 'collect_single_video', 'ensure_favorite_folder', 'collect_song_by_name', 'run_collect_flow']
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__search_bilibili_music
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_history
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_skipped_log
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__show_config
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__check_song_duplicates
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__discover_song_list
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__list_collected_songs
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_discovered_log
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__read_collected_log
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__reset_all_output_data
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__precision_search_song
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_single_video
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__ensure_favorite_folder
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__collect_song_by_name
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__bilibili-music__run_collect_flow
+2026-05-15 21:11:32.369 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 15 MCP tools from 'bilibili-music': ['mcp__bilibili-music__search_bilibili_music', 'mcp__bilibili-music__list_collected_history', 'mcp__bilibili-music__read_skipped_log', 'mcp__bilibili-music__show_config', 'mcp__bilibili-music__check_song_duplicates', 'mcp__bilibili-music__discover_song_list', 'mcp__bilibili-music__list_collected_songs', 'mcp__bilibili-music__read_discovered_log', 'mcp__bilibili-music__read_collected_log', 'mcp__bilibili-music__reset_all_output_data', 'mcp__bilibili-music__precision_search_song', 'mcp__bilibili-music__collect_single_video', 'mcp__bilibili-music__ensure_favorite_folder', 'mcp__bilibili-music__collect_song_by_name', 'mcp__bilibili-music__run_collect_flow']
+2026-05-15 21:11:32.369 | DEBUG    | src.jojo.mcp.client:register:43 - MCP server registered: xhs-kb (stdio)
+2026-05-15 21:11:40.718 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: 2026-05-15 21:11:40 | INFO    | src.kb_agent.indexer | Downloading embedding mod
+2026-05-15 21:11:42.040 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: Downloading Model from https://www.modelscope.cn to directory: C:\Users\jojo\.ca
+2026-05-15 21:11:42.190 | DEBUG    | src.jojo.mcp.client:_stdio_request:137 - MCP stdio skipped non-JSON: 2026-05-15 21:11:42 | INFO    | src.kb_agent.indexer | Embedding model ready (di
+2026-05-15 21:11:42.198 | INFO     | src.jojo.mcp.client:connect:59 - MCP connected: xhs-kb
+2026-05-15 21:11:42.199 | INFO     | src.jojo.mcp.client:list_tools:169 - MCP tools from 'xhs-kb': ['run_pipeline', 'search_xhs', 'search_kb']
+2026-05-15 21:11:42.200 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__run_pipeline
+2026-05-15 21:11:42.200 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__search_xhs
+2026-05-15 21:11:42.200 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: mcp__xhs-kb__search_kb
+2026-05-15 21:11:42.200 | INFO     | src.jojo.mcp.adapter:discover_and_register:40 - Registered 3 MCP tools from 'xhs-kb': ['mcp__xhs-kb__run_pipeline', 'mcp__xhs-kb__search_xhs', 'mcp__xhs-kb__search_kb']
+2026-05-15 21:11:42.319 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: add_cron_job
+2026-05-15 21:11:42.319 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: remove_cron_job
+2026-05-15 21:11:42.319 | DEBUG    | src.jojo.tools.registry:register:44 - Tool registered: list_cron_jobs
+2026-05-15 21:11:42.320 | INFO     | src.jojo.scheduler.engine:start:50 - Scheduler started with 0 jobs
+2026-05-15 21:11:52.985 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '我现在有什么定时任务吗？...' → researcher
+2026-05-15 21:11:52.990 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: code-review from skills\code\code-review.md
+2026-05-15 21:11:52.990 | DEBUG    | src.jojo.skills.loader:load_directory:90 - Loaded skill: daily-summary from skills\productivity\daily-summary.md
+2026-05-15 21:11:52.991 | INFO     | src.jojo.skills.registry:reload:25 - Loaded 2 skills: ['code-review', 'daily-summary']
+2026-05-15 21:11:54.006 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=medium, model=deepseek/deepseek-v4-flash
+2026-05-15 21:12:38.032 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '在每天晚上九点十四查看当天的天气...' → researcher
+2026-05-15 21:12:38.787 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=complex, model=deepseek/deepseek-v4-pro
+2026-05-15 21:12:52.027 | INFO     | src.jojo.scheduler.engine:add_job:68 - Job added: daily-weather (14 21 * * *) → researcher
+2026-05-15 21:14:00.007 | INFO     | src.jojo.scheduler.engine:_execute:119 - Executing job: daily-weather — 搜索并查看当天的天气情况，告知用户当前所在地区的天气信息（温度、天气状况、湿度等）
+2026-05-15 21:14:18.611 | INFO     | src.jojo.orchestrator.router:route:54 - Router: 'y...' → researcher
+2026-05-15 21:14:31.240 | INFO     | src.jojo.orchestrator.router:route:54 - Router: 'Y...' → coder
+2026-05-15 21:14:40.042 | INFO     | src.jojo.orchestrator.router:route:54 - Router: 'n...' → researcher
+2026-05-15 21:14:50.545 | WARNING  | src.jojo.agent.react_loop:run:120 - Agent stopped: 达到最大迭代次数 (10)，强制终止。
+2026-05-15 21:14:50.690 | DEBUG    | src.jojo.memory.long_term:add:131 - Long-term memory added: mem_8b1e79115538 (score=0.580)
+2026-05-15 21:14:50.690 | INFO     | src.jojo.scheduler.engine:_execute:148 - Job 'daily-weather' completed: 达到最大迭代次数 (10)，强制终止。...
+2026-05-15 21:14:54.334 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '结...' → coder
+2026-05-15 21:15:07.943 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '结束现有的自动书任务...' → coder
+2026-05-15 21:15:08.761 | INFO     | src.jojo.orchestrator.modes:auto:56 - Auto: complexity=complex, model=deepseek/deepseek-v4-pro
+2026-05-15 21:15:29.024 | INFO     | src.jojo.orchestrator.router:route:54 - Router: '结束现有的定时任务...' → coder
+2026-05-15 21:15:35.135 | INFO     | src.jojo.scheduler.engine:remove_job:79 - Job removed: job_6aee0305b63b

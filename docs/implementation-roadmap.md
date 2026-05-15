@@ -618,24 +618,39 @@ tests/
 
 | ID | 任务 | 状态 | 预估 | 依赖 | 产出文件 |
 |----|------|------|------|------|----------|
-| SCH-01 | 实现 Scheduler 封装 (APScheduler) | ⬜ | 35min | F-04 | src/jojo/scheduler/engine.py |
-| SCH-02 | 实现 CronJob 数据模型 | ⬜ | 15min | F-06 | src/jojo/scheduler/models.py |
-| SCH-03 | 实现 Job 持久化 (SQLite) | ⬜ | 30min | SCH-02, MEM-03 | src/jojo/scheduler/store.py |
-| SCH-04 | CLI 管理定时任务 (add/list/remove) | ⬜ | 30min | SCH-01, F-07 | src/jojo/cli.py |
-| SCH-05 | 验证：设置一个每天 9 点的定时任务并触发 | ⬜ | 15min | SCH-04 | — |
+| SCH-01 | 实现 Scheduler 封装 (APScheduler + Cron) | 🟢 | 35min | F-04 | src/jojo/scheduler/engine.py |
+| SCH-02 | 实现 CronJob 数据模型 | 🟢 | 15min | F-06 | src/jojo/scheduler/models.py |
+| SCH-03 | 实现 Job 持久化 (SQLite) | 🟢 | 30min | SCH-02 | src/jojo/scheduler/store.py |
+| SCH-03a | 定时任务注册为 Agent 工具 (对话中设/取消) | 🟢 | 20min | SCH-01 | src/jojo/scheduler/tools.py |
+| SCH-04 | CLI 管理定时任务 (job add/list/remove) | 🟢 | 30min | SCH-01, F-07 | src/jojo/cli.py |
+| SCH-05 | 验证：weather-kunming 每天 9:30 播报天气 | 🟢 | 15min | SCH-04 | — |
 
-**阶段九完成标志**: 定时任务按时触发，Agent 执行并将结果存入记忆。
+**阶段九完成标志**: `python run.py job add` → 定时任务按时触发，Agent 执行并存入记忆。
 
 ### 🧑 用户验证清单（阶段九）
 
 | # | 验证项 | 操作步骤 | 预期结果 |
 |---|--------|----------|----------|
-| 1 | 添加定时任务 | `python run.py job add --name "test" --cron "*/5 * * * *" --task "打印当前时间"` | 显示 "Job test created" |
-| 2 | 查看任务列表 | `python run.py job list` | 列出所有定时任务及其下次执行时间 |
-| 3 | 任务触发 | 等待 5 分钟，查看日志 | 日志中看到定时任务执行记录 |
-| 4 | 结果存储 | 任务执行后，检查记忆数据库 | 任务结果已存入 long-term memory |
-| 5 | 删除任务 | `python run.py job remove test` | 任务被移除，不再触发 |
-| 6 | 持久化 | 重启程序后查看 job list | 之前添加的定时任务还在 |
+| 1 | 添加定时任务 | `python run.py job add --name "weather" --cron "30 9 * * *" --task "..." --agent researcher` | 显示 Job added |
+| 2 | 查看任务列表 | `python run.py job list` | 列出 weather-kunming 任务 |
+| 3 | 对话中设任务 | `python run.py chat` → "每天早上 9 点帮我播报天气" | Agent 调用 add_cron_job 工具 |
+| 4 | 删除任务 | `python run.py job remove weather-kunming` | 任务被移除 |
+| 5 | 单元测试通过 | `pytest tests/test_scheduler.py -v` | 全部 PASSED |
+
+### 📁 阶段九新增文件树
+
+```
+src/jojo/scheduler/
+├── __init__.py             # 导出 CronJob, SchedulerEngine
+├── models.py               # CronJob 数据模型
+├── store.py                # SQLite 持久化
+├── engine.py               # APScheduler 引擎 + 自动执行
+└── tools.py                # add/remove/list 注册为 Agent Tool
+src/jojo/cli.py             # +job add/list/remove 命令 + chat 启动调度器
+src/jojo/tools/__init__.py  # 定时任务工具在 chat 启动时注册
+tests/
+└── test_scheduler.py        # 9 测试 (模型/存储/引擎)
+```
 
 ---
 
@@ -680,9 +695,9 @@ tests/
 | 六 | 多 Agent 协作 | 9 | ~5h |
 | 七 | Skill 技能系统 | 8 | ~4h |
 | 八 | MCP 协议集成 | 7 | ~3.5h |
-| 九 | 定时任务 | 5 | ~2h |
+| 九 | 定时任务 | 6 | ~2.5h |
 | 十 | 打磨交付 | 7 | ~5h |
-| **合计** | | **75** | **~37.5h** |
+| **合计** | | **76** | **~38h** |
 
 约 **1-2 周** 可完成全部阶段（按每天 4-6 小时计算）。
 

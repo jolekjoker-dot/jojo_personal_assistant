@@ -164,6 +164,30 @@ python run.py orchestrate \
   --agents researcher
 ```
 
+## 定时任务
+
+```bash
+# 添加定时任务 (Cron 表达式)
+python run.py job add --name "weather" --cron "30 9 * * *" \
+  --task "搜索昆明呈贡区今天天气并播报" --agent researcher
+
+# 查看所有定时任务
+python run.py job list
+
+# 删除任务
+python run.py job remove weather
+```
+
+对话中也可以管理：
+
+```
+JoJo> 每天早上 9 点半帮我播报昆明呈贡区天气
+  → Agent 调用 add_cron_job 工具，返回 "定时任务已添加"
+
+JoJo> 取消早上的天气播报
+  → Agent 调用 remove_cron_job 工具，返回 "已移除"
+```
+
 ## 对话模式
 
 ```bash
@@ -322,6 +346,11 @@ jojo_personal_assistant/
 │   │   ├── models.py       # Skill 数据模型
 │   │   ├── loader.py       # Markdown 解析
 │   │   └── registry.py     # 匹配/发现
+│   ├── scheduler/          # 定时任务
+│   │   ├── models.py       # CronJob 模型
+│   │   ├── store.py        # SQLite 持久化
+│   │   ├── engine.py       # APScheduler 引擎
+│   │   └── tools.py        # Agent 工具 (增删查)
 │   └── agents/             # 预置 Agent
 │       ├── researcher.py   # Researcher (Flash)
 │       └── coder.py        # Coder (Pro)
@@ -336,7 +365,8 @@ jojo_personal_assistant/
 │   ├── test_agent.py
 │   ├── test_memory.py
 │   ├── test_multi_agent.py
-│   └── test_skills.py
+│   ├── test_skills.py
+│   └── test_scheduler.py
 └── docs/
     ├── agent-framework-guide.md       # 框架设计文档
     ├── implementation-roadmap.md      # 实现路线图
@@ -354,8 +384,8 @@ jojo_personal_assistant/
 - ✅ 阶段五：三层记忆系统（含遗忘曲线）
 - ✅ 阶段六：多 Agent 协作（自动路由 + 模型选择）
 - ✅ 阶段七：Skill 技能系统（Markdown 定义，自动匹配）
-- ⬜ 阶段八：MCP 协议集成
-- ⬜ 阶段九：定时任务
+- ✅ 阶段八：MCP 协议集成（3 servers, 41 tools）
+- ✅ 阶段九：定时任务（Cron + Agent 工具管理）
 - ⬜ 阶段十：打磨交付
 
 详见 [docs/implementation-roadmap.md](docs/implementation-roadmap.md)

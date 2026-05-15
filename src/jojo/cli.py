@@ -75,6 +75,16 @@ async def _chat_loop() -> None:
         except Exception as e:
             logger.warning(f"Failed to connect MCP '{cfg.name}': {e}")
 
+    # 启动定时任务引擎 + 注册工具
+    from src.jojo.scheduler import engine as sched_engine
+    from src.jojo.scheduler.tools import add_cron_job, remove_cron_job, list_cron_jobs
+    from src.jojo.tools.registry import registry as tool_registry
+    tool_registry.register_from_decorated(add_cron_job)
+    tool_registry.register_from_decorated(remove_cron_job)
+    tool_registry.register_from_decorated(list_cron_jobs)
+    sched_engine.start()
+    sched_jobs = sched_engine.list_jobs()
+
     print()
     print("=" * 55)
     print("  JoJo Agent — Multi-Agent Chat Mode")
@@ -83,13 +93,24 @@ async def _chat_loop() -> None:
     print(f"  Agents: {', '.join(a['name'] for a in registry.list_all())}")
     if mcp_tool_count:
         print(f"  MCP:    {mcp_tool_count} tools from {len([c for c in mcp_configs if c.name in mcp_client.connected_servers])} servers")
+    if sched_jobs:
+        print(f"  Jobs:   {len(sched_jobs)} scheduled")
     print("  /exit  /verbose  /allowall  /help  /agents")
     print("=" * 55)
     print()
 
     while True:
+        # 检查定时任务通知
+        notifications = sched_engine.pop_notifications()
+        for note in notifications:
+            print(f"\n  {note}\n")
+
         try:
-            user_input = input("JoJo> ").strip()
+            # 在线程中运行 input()，不阻塞事件循环（否则调度器冻结）
+            loop = asyncio.get_event_loop()
+            user_input = (await loop.run_in_executor(
+                None, lambda: input("JoJo> ").strip()
+            ))
         except (EOFError, KeyboardInterrupt):
             print("\nGoodbye!")
             break
@@ -275,6 +296,50 @@ def cmd_mcp_connect(args: argparse.Namespace) -> None:
     asyncio.run(_mcp_connect_cmd(args.name))
 
 
+# ========== 定时任务管理 ==========
+
+def _job_wrapper(fn):
+    """Wrap sync CLI calls in asyncio for APScheduler."""
+    def wrapper(*args, **kwargs):
+        asyncio.run(fn(*args, **kwargs))
+    return wrapper
+
+
+@_job_wrapper
+async def cmd_job_add(args: argparse.Namespace) -> None:
+    from src.jojo.scheduler import engine
+    engine.start()
+    job = engine.add_job(
+        name=args.name, cron=args.cron,
+        task=args.task, agent=args.agent or "researcher",
+    )
+    print(f"Job added: {job.name} ({job.cron}) ID={job.id}")
+
+
+@_job_wrapper
+async def cmd_job_list() -> None:
+    from src.jojo.scheduler import engine
+    engine.start()
+    jobs = engine.list_jobs()
+    if not jobs:
+        print("No scheduled jobs.")
+        return
+    for j in jobs:
+        status = "enabled" if j.enabled else "disabled"
+        last = f"last: {j.last_run_at}" if j.last_run_at else "never"
+        print(f"  [{j.name}] {j.cron} → {j.agent}: {j.task} ({status}, {last})")
+
+
+@_job_wrapper
+async def cmd_job_remove(args: argparse.Namespace) -> None:
+    from src.jojo.scheduler import engine
+    engine.start()
+    if engine.remove_by_name(args.name):
+        print(f"Job '{args.name}' removed.")
+    else:
+        print(f"Job '{args.name}' not found.")
+
+
 # ========== 审批回调 ==========
 
 async def _cli_approval_callback(req: ApprovalRequest) -> str:
@@ -338,6 +403,18 @@ Examples:
     mcp_conn = mcp_sub.add_parser("connect", help="Connect to an MCP server")
     mcp_conn.add_argument("name", help="MCP server name")
 
+    # job
+    job = sub.add_parser("job", help="Scheduled job management")
+    job_sub = job.add_subparsers(dest="job_cmd")
+    job_sub.add_parser("list", help="List all scheduled jobs")
+    job_add = job_sub.add_parser("add", help="Add a scheduled job")
+    job_add.add_argument("--name", required=True, help="Job name")
+    job_add.add_argument("--cron", required=True, help="Cron expression (e.g. '0 9 * * *')")
+    job_add.add_argument("--task", required=True, help="Task description")
+    job_add.add_argument("--agent", help="Agent name (default: researcher)")
+    job_rm = job_sub.add_parser("remove", help="Remove a job by name")
+    job_rm.add_argument("name", help="Job name")
+
     return parser
 
 
@@ -378,6 +455,15 @@ def main(args: list[str] | None = None) -> None:
             cmd_mcp_connect(parsed)
         else:
             print("Usage: jojo mcp list | jojo mcp connect <name>")
+    elif parsed.command == "job":
+        if parsed.job_cmd == "list":
+            cmd_job_list()
+        elif parsed.job_cmd == "add":
+            cmd_job_add(parsed)
+        elif parsed.job_cmd == "remove":
+            cmd_job_remove(parsed)
+        else:
+            print("Usage: jojo job list | jojo job add --name ... --cron ... --task ... | jojo job remove <name>")
     else:
         print("=" * 50)
         print("  JoJo Personal AI Assistant")
